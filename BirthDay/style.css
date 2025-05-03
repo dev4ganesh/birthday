@@ -283,3 +283,95 @@ body {
   color: white;
   text-shadow: 0 0 20px rgb(235, 25, 42);
 }
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .glass {
+    height: 300px;
+    width: 180px;
+  }
+
+  .petals > div {
+    width: 40px;
+    height: 70px;
+  }
+
+  .petals > div:nth-child(2),
+  .petals > div:nth-child(3),
+  .petals > div:nth-child(4),
+  .petals > div:nth-child(5),
+  .petals > div:nth-child(6),
+  .petals > div:nth-child(7) {
+    top: 60px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .text a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .glass {
+    /* height: 250px; */
+    width: 150px;
+  }
+
+  .petals > div {
+    width: 35px;
+    height: 60px;
+  }
+
+  .text {
+    font-size: 18px;
+    margin-left: 0;
+    padding: 0 5px;
+  }
+
+  .text a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 95%;
+    height: auto;
+  }
+
+  .glass {
+    /* height: 200px; */
+    width: 120px;
+  }
+
+  .petals > div {
+    width: 30px;
+    height: 50px;
+  }
+
+  .text {
+    font-size: 16px;
+    margin-left: 0;
+    padding: 0 5px;
+  }
+
+  .text a {
+    font-size: 14px;
+  }
+}

@@ -65,8 +65,8 @@ h1 {
 .postcard:hover,
 .postcard:active,
 .postcard:focus {
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -111,4 +111,57 @@ p {
   font-size: 25px;
 
   text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .postcard, .postcard1 {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 2em;
+    transform: none;
+    left: 5% !important;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  p span {
+    font-size: 24px;
+  }
+
+  .ullu {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  p span {
+    font-size: 20px;
+  }
+
+  .ullu {
+    font-size: 18px;
+  }
+
+  .postcard, .postcard1 {
+    padding: 1.5em;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
 }
