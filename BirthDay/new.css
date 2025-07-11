@@ -4,11 +4,14 @@
 }
 
 body {
-  font-family: "Varela Round", "Quicksand", sans-serif;
+ font-family: "Varela Round", "Quicksand", sans-serif;
   background: url(background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center; /* Add this for better centering */
+  background-attachment: fixed; /* Optional: keeps background fixed on scroll */
   background-color: black;
+  overflow: hidden
 }
 
 .postcard {
@@ -56,7 +59,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 4.5em;
+  font-size: 3.5em;
   color: #fdfdfd;
   margin-bottom: 5px;
 }
@@ -114,7 +117,7 @@ p {
 }
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  .postcard, .postcard1 {
+    .postcard, .postcard1 {
     width: 90%;
     height: auto;
     flex-direction: column;
@@ -141,6 +144,12 @@ p {
 }
 
 @media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: center top;
+    background-attachment: scroll; /* Optional: disables fixed on mobile for performance */
+  }
+
   h1 {
     font-size: 2.2em;
   }
@@ -157,7 +166,18 @@ p {
     font-size: 18px;
   }
 
-  .postcard, .postcard1 {
+   .postcard {
+    width: 98%;
+    min-height: 300px;
+    height: auto;
+    left: 1% !important;
+    padding: 1.5em;
+  }
+  .postcard1 {
+    width: 98%;
+    min-height: 300px;
+    height: 79vh;
+    left: 1% !important;
     padding: 1.5em;
   }
 
