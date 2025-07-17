@@ -163,6 +163,7 @@ p {
     background-size: cover;
     background-position: 70% center;
     background-attachment: scroll;
+    height: 100vh;
 
   }
 
