@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 body {
- font-family: "Varela Round", "Quicksand", sans-serif;
-  background: url(background.jpg);
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  background: url(bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; /* Add this for better centering */
-  background-attachment: fixed; /* Optional: keeps background fixed on scroll */
+  background-position: center center;
+  /* Add this for better centering */
+  background-attachment: fixed;
+  /* Optional: keeps background fixed on scroll */
   background-color: black;
   overflow: hidden
 }
-
 .postcard {
   width: 800px;
   height: 500px;
@@ -25,8 +27,10 @@ body {
   justify-content: space-between;
   padding: 3em;
   box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
-  -ms-transform: rotate(2.5deg); /* IE 9 */
-  -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(2.5deg);
+  /* IE 9 */
+  -webkit-transform: rotate(2.5deg);
+  /* Chrome, Safari, Opera */
   transform: rotate(2.5deg);
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -48,8 +52,10 @@ body {
   justify-content: space-between;
   padding: 3em;
   box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
-  -ms-transform: rotate(2.5deg); /* IE 9 */
-  -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(2.5deg);
+  /* IE 9 */
+  -webkit-transform: rotate(2.5deg);
+  /* Chrome, Safari, Opera */
   transform: rotate(2.5deg);
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -99,25 +105,31 @@ footer p {
   font-size: 1em;
   letter-spacing: 1px;
 }
+
 p span {
   font-size: 30px;
   font-weight: 600;
   text-shadow: 0 0 20px rgb(255, 255, 255);
   color: #800020;
 }
+
 p {
   font-size: 22px;
   font-family: cursive;
   font-weight: 540;
 }
+
 .ullu {
   font-size: 25px;
 
   text-shadow: 0 0 20px rgb(255, 255, 255);
 }
+
 /* Responsive adjustments */
 @media (max-width: 900px) {
-    .postcard, .postcard1 {
+
+  .postcard,
+  .postcard1 {
     width: 90%;
     height: auto;
     flex-direction: column;
@@ -145,9 +157,13 @@ p {
 
 @media (max-width: 600px) {
   body {
-    background-size: cover;
+    /* background-size: cover;
     background-position: center top;
-    background-attachment: scroll; /* Optional: disables fixed on mobile for performance */
+    background-attachment: scroll; */
+    background-size: cover;
+    background-position: 70% center;
+    background-attachment: scroll;
+
   }
 
   h1 {
@@ -160,25 +176,35 @@ p {
 
   p span {
     font-size: 20px;
+    color: #FFD166;
+    /* soft golden yellow */
+    text-shadow: 0 0 8px rgba(255, 250, 200, 0.6);
   }
 
   .ullu {
     font-size: 18px;
+    color: #FFD166;
+    /* soft golden yellow */
+    text-shadow: 0 0 8px rgba(255, 250, 200, 0.6);
   }
 
-   .postcard {
+  .postcard {
     width: 98%;
     min-height: 300px;
     height: auto;
     left: 1% !important;
     padding: 1.5em;
+    color: white;
   }
+
   .postcard1 {
-    width: 98%;
+    /* width: 98%;
     min-height: 300px;
     height: 79vh;
     left: 1% !important;
     padding: 1.5em;
+    transform: none; */
+    display: none !important;
   }
 
   footer p {
