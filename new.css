@@ -6,7 +6,7 @@
 
 body {
   font-family: "Varela Round", "Quicksand", sans-serif;
-  background: url(bg.jpg);
+  background: url(background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -157,13 +157,13 @@ p {
 
 @media (max-width: 600px) {
   body {
-    /* background-size: cover;
-    background-position: center top;
-    background-attachment: scroll; */
     background-size: cover;
+    background-position: center top;
+    background-attachment: scroll;
+    /* background-size: cover;
     background-position: 70% center;
     background-attachment: scroll;
-    height: 100vh;
+    height: 100vh; */
 
   }
 
